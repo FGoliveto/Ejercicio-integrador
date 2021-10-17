@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+/* Estilo de la barra del encabezado */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(37,37,37);
+}
+.navIzquierda{
+    display: flex;
+    align-items: center;
+    margin: 0 5em;
+}
+.navIzquierda img{
+    width: 15em;
+    height: 11em;
+}
+.navIzquierda p{
+    color: white;
+    font-size: xx-large;
+}
+.navDerecha{
+    display: flex;
+    align-items: center;
+}
+.navDerecha > p{
+    margin: 0 0.5em;
+    font-size: large;
+    color: grey;
+}
+.navDerecha :first-child{
+    color: white;
+}
+.navDerecha a{
+    margin: 0 0.5em;
+    color: rgb(24, 207, 24);
+    font-size: large;
+    text-decoration-line: none;
+}
+/* titulo principal */
+.encabezado{
+    position: relative; 
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.encabezado::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+.encabezado img{
+    height: 50vh;
+    width: 100vw;
+}
+.encabezado .descripcion{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    right: 5%;
+    bottom: 20%;
+    text-align: right;
+}
+.encabezado .descripcion h2{
+    color: white;
+    font-size: xx-large;
+}
+.encabezado .descripcion p{
+    color: white;
+    font-size: medium;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.botones :first-child{
+    border-radius: 0.2rem;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: large;
+}
+.botones :last-child{
+    border-radius: 0.2rem;
+    background-color: rgb(36, 206, 36);
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-color: rgb(36, 206, 36);
+    border-style: solid;
+    border-width: thin;
+    text-decoration: none;
+    font-size: large;
+}
+/* conoce a los oradores */
+.oradores {
+    display: grid;
+    grid-template: 5rem 60rem / 12.5% 25% 25% 25% 12.5%;
+}
+.oradores div{
+    grid-column: span 5;
+    display: inline-block;
+}
+.oradores div p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+.oradores div h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+.steve {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+}
+.bill{
+    grid-column-start: 3;
+    display: flex;
+    flex-direction: column;
+}
+.ada{
+    grid-column-start: 4;
+    display: flex;
+    flex-direction: column;
+}
+#imgOrador{
+    width: 40rem;
+    height: 40rem;
+}
+#contEtiq{
+    display: flex;
+}
+#javaScrip{
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: orange;
+    background-color: orange;
+    margin: 1rem;
+    font-weight: bolder;
+}
+#react{
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: teal;
+    background-color: teal;
+    margin: 1rem;
+    font-weight: bolder;
+    color: white;
+}
+#negocios{
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: rgb(56, 56, 56);
+    background-color: rgb(56, 56, 56);
+    margin: 1rem;
+    font-weight: bolder;
+    color: white;
+}
+#startups{
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: red;
+    background-color: red;
+    margin: 1rem;
+    font-weight: bolder;
+    color: white;
+}
+#nombreOrador{
+    font-size: x-large;
+    margin: 1rem;
+}
+#lorem{
+    font-size: medium;
+    margin: 1rem;
+}
+/* Lugar y Fechas */
+.lugarYfecha{
+    display: grid;
+    grid-template: 50rem / 50% 50%;
+}
+.lugarYfecha img{
+    grid-column: 1;
+    width: 100%;
+    height: 50rem;
+}
+.lugarYfecha div{
+    background-color: rgb(37,37,37);
+    color: white;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.lugarYfecha div h3{
+    font-size: x-large;
+}
+.lugarYfecha div p{
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+.lugarYfecha div a{
+    border-radius: 0.2rem;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    padding: 0.5rem;
+}
+/* Formulario */
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+}
+.formulario div p{
+    font-size: 1.5em;
+}
+.formulario div h2{
+    font-size: 3em;
+}
+.formulario div span{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.formulario form{
+    display: grid;
+    grid-template: 4rem 12rem 3rem 5rem / 20% 30% 30% 20%;
+}
+#nombre{
+    grid-column-start: 2;
+    margin: 0.5rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+}
+#apellido{
+    grid-column-start: 3;
+    margin: 0.5rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+}
+#presentacion{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 0.5rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    font-size: large;
+}
+.formulario form p{
+    grid-column-start: 2;
+    margin: 0.5rem;
+    color: grey;
+    font-size: small;
+    text-align: initial;
+}
+#enviar{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 0.5rem;
+    color: white;
+    font-size: medium;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: rgb(99, 156, 14);
+    background-color: rgb(99, 156, 14);
+}
+/* Barra del footer */
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(37, 104, 143);
+    color: white;
+    font-size: medium;
+    padding: 3rem 0;
+    margin-top: 1rem;
+    list-style-position: inside;
+    list-style-type: none;
+}
+footer a:visited{
+    color: white;
+}
+footer a:hover{
+    color: tomato;
+}
+footer a:active{
+    color: red;
+}
