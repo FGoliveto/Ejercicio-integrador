@@ -5,8 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar Tickets</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/comprarTickets.css">
 </head>
 <body>
-    <h1>Por completar en el tp de JavaScrip</h1>
+    <header>
+        <nav>
+            <div class="navIzquierda">
+                <p>Conf Bs As</p>
+            </div>
+            <div class="navDerecha">
+                <p>La conferencia</p>
+                <p>Los oradores</p>
+                <p>El lugar y la fecha</p>
+                <p>Conviértete en orador</p>
+                <a href="" target="">Comprar tickets</a>
+            </div>
+        </nav>
+    </header>
+    <section class="beneficios">
+        <div class="estudiante">
+            <h4>Estudiante</h4>
+            <p>Tiene un descuento</p>
+            <h4>80%</h4>
+            <p>* presentar documentación</p>
+        </div>
+        <div class="trainee">
+            <h4>Trainee</h4>
+            <p>Tiene un descuento</p>
+            <h4>50%</h4>
+            <p>* presentar documentación</p>
+        </div>
+        <div class="junior">
+            <h4>Junior</h4>
+            <p>Tiene un descuento</p>
+            <h4>15%</h4>
+            <p>* presentar documentación</p>
+        </div>
+    </section>
+    <section class="ventaDeTickets">
+        <div>
+            <p>VENTA</p>
+            <h2>VALOR DEL TICKET $200</h2>
+            <form action="get">
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                <input type="text" name="apellido" placeholder="Apellido" id="apellido">
+                <input type="text" name="correo" placeholder="correo" id="correo">
+                <label for="cantidad">Cantidad</label>
+                <input type="text" name="cantidad" placeholder="Cantidad" id="cantidad">
+                <label for="categoria">Categoria</label>
+                <input type="text" name="categoria" id="categoria">
+                <p>Total a Pagar: $</p>
+                <input type="reset" name="reset" placeholder="Borrar">
+                <input type="button" name="resumen" placeholder="Resumen">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="">Preguntas<br>frecuentes</a></li>
+            <li><a href="">Contáctanos</a></li>
+            <li><a href="">Prensa</a></li>
+            <li><a href="">Conferencias</a></li>
+            <li><a href="">Términos y<br>condiciones</a></li>
+            <li><a href="">Privacidad</a></li>
+            <li><a href="">Estudicantes</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

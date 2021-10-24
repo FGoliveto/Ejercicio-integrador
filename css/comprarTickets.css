@@ -1,8 +1,71 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.beneficios {
+    display: grid;
+    grid-template: 100% / 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
 }
-html{
-    font-size: 62.5%;
+.estudiante{
+    grid-column-start: 2;
+    margin: 1rem 0.1rem;
+    border: blue;
+    border-style: solid;
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.trainee{
+    grid-column-start: 3;
+    margin: 1rem 0.1rem;
+    border: green;
+    border-style: solid;
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.junior{
+    grid-column-start: 4;
+    margin: 1rem 0.1rem;
+    border: rgb(199, 163, 5);
+    border-style: solid;
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.beneficios h4{
+    padding: 1.5rem;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.beneficios p{
+    padding: 1.5rem;
+    font-size: medium;
+}
+.beneficios p:last-child{
+    padding: 1.5rem;
+    font-size: small;
+}
+.ventaDeTickets div p {
+    text-align: center;
+    font-size: 1.5em;
+}
+.ventaDeTickets div h2{
+    text-align: center;
+    font-size: 3em;
+}
+.ventaDeTickets form{
+    display: grid;
+    grid-template: 1fr 1fr 1.5fr 1.5fr 1fr / 2fr 3fr 3fr 2fr;
+}
+#nombre{
+    grid-column-start: 2;
+}
+#apellido{
+    grid-column-start: 3;
+}
+#correo{
+    grid-column-start: 2;
+    grid-column-end: 2 span ;
+}
+
