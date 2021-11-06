@@ -1,3 +1,4 @@
+/* Estilo de los descuentos para el evento */
 .beneficios {
     display: grid;
     grid-template: 100% / 1fr 1fr 1fr 1fr 1fr;
@@ -46,7 +47,9 @@
     padding: 1.5rem;
     font-size: small;
 }
+/* Estilo de venta de tickets */
 .ventaDeTickets div p {
+    margin-top: 1em;
     text-align: center;
     font-size: 1.5em;
 }
@@ -57,15 +60,98 @@
 .ventaDeTickets form{
     display: grid;
     grid-template: 1fr 1fr 1.5fr 1.5fr 1fr / 2fr 3fr 3fr 2fr;
+    margin: 5em 0;
 }
-#nombre{
+#nombreDeComprador{
     grid-column-start: 2;
+    border-style: solid;
+    border-radius: 0.2rem;
+    border-width: thin;
+    padding: 0.2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    font-size: medium;
 }
-#apellido{
+#apellidoDeComprador{
     grid-column-start: 3;
+    border-style: solid;
+    border-radius: 0.2rem;
+    border-width: thin;
+    padding: 0.2rem;
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    font-size: medium;
 }
-#correo{
+#correoDeComprador{
     grid-column-start: 2;
     grid-column-end: 2 span ;
+    border-style: solid;
+    border-radius: 0.2rem;
+    border-width: thin;
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    font-size: medium;
 }
+.ventaDeTickets .cantidad{
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+}
+#cantidadDeComprador{
+    font-size: medium;
+    margin-top: 0.5rem;
+    padding: 0.2rem;
+}
+.ventaDeTickets .categoria{
+    grid-column-start: 3;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+}
+#categoriaDeComprador{
+    font-size: medium;
+    margin-top: 0.5rem;
+    padding: 0.2rem;
+}
+.ventaDeTickets div form p{
+    grid-column-start: 2;
+    grid-column-end: 2 span;
+    text-align: start;
+    border-style: solid;
+    border-width: thin;
+    font-size: x-large;
+    border-color: rgb(80, 159, 224);
+    background-color: rgb(157, 188, 247);
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 00.5rem;
+}
+#borrarDeComprador{
+    grid-column-start: 2;
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: thin;
+    padding: 0.2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    border-color: rgb(112, 209, 32);
+    background-color: rgb(98, 233, 36);
+}
+#resumenDeComprador{
+    grid-column-start: 3;
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: thin;
+    padding: 0.2rem;
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    border-color: rgb(112, 209, 32);
+    background-color: rgb(98, 233, 36);
+}
+
 

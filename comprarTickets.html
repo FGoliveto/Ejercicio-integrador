@@ -12,6 +12,7 @@
     <header>
         <nav>
             <div class="navIzquierda">
+                <br>
                 <p>Conf Bs As</p>
             </div>
             <div class="navDerecha">
@@ -48,16 +49,24 @@
             <p>VENTA</p>
             <h2>VALOR DEL TICKET $200</h2>
             <form action="get">
-                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-                <input type="text" name="apellido" placeholder="Apellido" id="apellido">
-                <input type="text" name="correo" placeholder="correo" id="correo">
-                <label for="cantidad">Cantidad</label>
-                <input type="text" name="cantidad" placeholder="Cantidad" id="cantidad">
-                <label for="categoria">Categoria</label>
-                <input type="text" name="categoria" id="categoria">
-                <p>Total a Pagar: $</p>
-                <input type="reset" name="reset" placeholder="Borrar">
-                <input type="button" name="resumen" placeholder="Resumen">
+                <input type="text" name="nombre" placeholder="Nombre" id="nombreDeComprador">
+                <input type="text" name="apellido" placeholder="Apellido" id="apellidoDeComprador">
+                <input type="text" name="correo" placeholder="Correo" id="correoDeComprador">
+                <div class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" placeholder="Cantidad" id="cantidadDeComprador">    
+                </div>
+                <div class="categoria">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoriaDeComprador">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>      
+                </div>
+                <p id="totalAPagar">Total a Pagar: $ </p>
+                <input type="reset" name="reset" id="borrarDeComprador" value="Borrar">
+                <input type="button" name="resumen" id="resumenDeComprador" value="Resumen">
             </form>
         </div>
     </section>
@@ -72,5 +81,6 @@
             <li><a href="">Estudicantes</a></li>
         </ul>
     </footer>
+    <script src="calculoImporte.js"></script>
 </body>
 </html>
